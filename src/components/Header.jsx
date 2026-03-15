@@ -1,16 +1,16 @@
-const Header = ({ connectionStatus, sessionId, onClearSession, onGetInfo }) => {
+const Header = ({ connectionStatus, /* sessionId, */ onClearSession, onGetInfo }) => {
   const statusText = {
-    connected: 'Connected',
-    connecting: 'Connecting...',
-    disconnected: 'Disconnected',
-    error: 'Error',
+    connected: '✅ Ready to solve',
+    connecting: '🔄 Loading math engine...',
+    disconnected: '❌ Disconnected',
+    error: '❌ Error',
   };
 
   return (
     <div className="header">
       <div className="header-title">
-        <span className="header-icon">🤖</span>
-        <span>Live Agent</span>
+        <span className="header-icon">📐</span>
+        <span>Math Tutor AI Agent</span>
       </div>
       <div className="header-actions">
         <button className="header-btn" onClick={onGetInfo} title="Session Info">

@@ -1,16 +1,71 @@
-# React + Vite
+# 📐 Math Tutor AI Agent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Your Personal Math Genius 🚀
 
-Currently, two official plugins are available:
+Imagine having a **24/7 math tutor** who can:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Solve equations step-by-step
+- Understand handwritten math from photos
+- Listen to spoken equations
+- Explain calculus, algebra, geometry, and more
+- Use advanced AI tools for complex proofs
 
-## React Compiler
+**This is no ordinary chatbot. It's your multimodal math partner!**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟 Key Features
 
-## Expanding the ESLint configuration
+### Multimodal Math Magic
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Feature        | Icon | Description                                     |
+| -------------- | ---- | ----------------------------------------------- |
+| **Text Math**  | 📝   | `Solve x² + 5x + 6 = 0` → Step-by-step solution |
+| **Image Math** | 📷   | Upload handwritten problems, printed worksheets |
+| **Voice Math** | 🎤   | Speak equations: \"integral of sin(x)\"         |
+| **Streaming**  | ⏩   | Real-time typing responses                      |
+| **AI Tools**   | 🔧   | Advanced math engines, symbolic computation     |
+
+### Real Examples
+
+```
+User: 📷 [photo of triangle]
+AI: This is a 30-60-90 triangle. Side lengths: x, x√3, 2x
+```
+
+```
+User: 🎤 \"What's the derivative of e^x sin(x)\"
+AI: e^x (sin(x) + cos(x)) [with LaTeX rendering]
+```
+
+## 🎮 Quick Start
+
+```bash
+npm install
+npm run dev
+```
+
+Open [localhost:5174](http://localhost:5174)
+
+## 🏗️ Architecture
+
+- **Frontend**: React + Vite + KaTeX for beautiful math rendering
+- **Backend**: Specialized multimodal math AI agent (WebSocket + REST)
+- **Communication**: Real-time streaming + tool calling
+
+## 📱 Screenshots
+
+| Hero - Main Interface                | Equation Solving                           | Multimodal Input                            | Advanced Features                         |
+| ------------------------------------ | ------------------------------------------ | ------------------------------------------- | ----------------------------------------- |
+| ![Hero](public/screenshots/demo.png) | ![Equations](public/screenshots/demo2.png) | ![Multimodal](public/screenshots/demo3.png) | ![Advanced](public/screenshots/demo4.png) |
+
+## 🔮 What's Next?
+
+- Handwriting recognition for scanned homework
+- Interactive graphing (Desmos integration)
+- Export solutions as PDF/LaTeX
+- Multi-session memory for full courses
+
+**Math problems? This agent has your back! 🎓**
+
+---
+
+_Built with ❤️ for math learners everywhere_

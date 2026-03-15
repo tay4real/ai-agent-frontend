@@ -18,13 +18,16 @@ const ChatBox = ({ messages, isStreaming }) => {
     <div className="chatbox" ref={chatBoxRef}>
       {messages.length === 0 && (
         <div className="welcome-message">
-          <p>👋 Welcome to Live Agent!</p>
-          <p>Start chatting or use the features below:</p>
+          <p>📐 Welcome to Math Tutor AI Agent!</p>
+          <p>
+            Your multimodal math tutor. Ask math questions, upload images of problems, or speak
+            equations:
+          </p>
           <ul>
-            <li>🎤 Record audio for voice input</li>
-            <li>📷 Upload images</li>
-            <li>⏩ Use streaming for real-time responses</li>
-            <li>🔧 Enable tools for AI-powered actions</li>
+            <li>📝 "Solve x² + 5x + 6 = 0"</li>
+            <li>📷 Upload handwritten math problems</li>
+            <li>🎤 Speak equations or proofs</li>
+            <li>🔧 Advanced tools for step-by-step solutions</li>
           </ul>
         </div>
       )}
