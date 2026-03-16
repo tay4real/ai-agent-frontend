@@ -20,7 +20,6 @@ Students need personalized math help. Traditional tutors expensive/unavailable. 
 
 - **Frontend**: https://ai-agent-frontend-1087118236338.us-central1.run.app
 - **Backend API**: https://mathtutor-agent-backend-1087118236338.us-central1.run.app
-- **Arch Diagram**: ![Architecture](public/screenshots/math_tutor_system_architecture.svg)
 
 ## 🛠️ Tech Stack
 
