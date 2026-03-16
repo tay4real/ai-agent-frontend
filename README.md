@@ -2,8 +2,7 @@
 
 ## Multimodal Math Tutor - Hackathon Winner Candidate
 
-[![Frontend](https://ai-agent-frontend-1087118236338.us-central1.run.app/)](https://ai-agent-frontend-1087118236338.us-central1.run.app/)
-[![Backend](https://mathtutor-agent-backend-1087118236338.us-central1.run.app/)](https://mathtutor-agent-backend-1087118236338.us-central1.run.app/)
+[![Frontend](https://ai-agent-frontend-1087118236338.us-central1.run.app/)](public/screenshots/demo.png)
 
 **24/7 AI Math Tutor**: Text, voice, image → step-by-step solutions. Interrupt, ask clarifications. Agentic tools for complex math.
 
