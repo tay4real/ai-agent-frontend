@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:prod": "VITE_API_BASE_URL=https://mathtutor-agent-backend-1087118236338.us-central1.run.app vite build",
+    "docker:test": "docker build -t frontend . && docker run -p 8080:80 -e VITE_API_BASE_URL=https://mathtutor-agent-backend-1087118236338.us-central1.run.app frontend",
+    "deploy": "gcloud run deploy ai-agent-frontend --image gcr.io/math-tutor-live/frontend:latest --platform managed --region us-central1 --allow-unauthenticated --set-env-vars VITE_API_BASE_URL=https://mathtutor-agent-backend-1087118236338.us-central1.run.app --project math-tutor-live --tag gcr.io/math-tutor-live/frontend:latest && gcloud run services update-traffic ai-agent-frontend --to-latest --project math-tutor-live --region us-central1",
+    "push": "docker tag frontend gcr.io/math-tutor-live/frontend:latest && docker push gcr.io/math-tutor-live/frontend:latest"
   },
   "dependencies": {
     "katex": "^0.16.38",

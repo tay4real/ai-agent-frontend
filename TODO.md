@@ -1,14 +1,16 @@
-# Math Tutor AI Agent Rebranding
+# Cloud Run Deployment TODO
 
-Previous UI completed.
+## Completed
 
-## Steps:
+- [x] Edit src/App.jsx (env var + WS wss + lint fixes).
+- [x] Dockerfile + nginx.conf.
+- [x] .dockerignore.
+- [x] package.json scripts.
 
-- [x] Create TODO.md
-- [x] Rebrand Header.jsx (title, icons, status)
-- [x] Update ChatBox.jsx welcome (math examples)
-- [x] Update styles.css (math blue gradient header)
-- [x] Create storytelling README.md w/ screenshots (demo.png, demo2.png, demo3.png)
-- [x] Complete
+## Remaining
 
-**Next:** Edit Header.jsx
+1. **Update README.md**.
+2. **Test local**: `npm run build:prod && npm run preview` (check prod backend).
+3. **Test Docker**: `npm run docker:test`.
+4. **Deploy**: `npm run deploy` (setup gcloud auth/project first).
+5. Complete.

@@ -2,48 +2,7 @@
 
 ## Your Personal Math Genius 🚀
 
-Imagine having a **24/7 math tutor** who can:
-
-- Solve equations step-by-step
-- Understand handwritten math from photos
-- Listen to spoken equations
-- Explain calculus, algebra, geometry, and more
-- Use advanced AI tools for complex proofs
-
-**This is no ordinary chatbot. It's your multimodal math partner!**
-
-## 🌟 Key Features
-
-### Multimodal Math Magic
-
-| Feature        | Icon | Description                                     |
-| -------------- | ---- | ----------------------------------------------- |
-| **Text Math**  | 📝   | `Solve x² + 5x + 6 = 0` → Step-by-step solution |
-| **Image Math** | 📷   | Upload handwritten problems, printed worksheets |
-| **Voice Math** | 🎤   | Speak equations: \"integral of sin(x)\"         |
-| **Streaming**  | ⏩   | Real-time typing responses                      |
-| **AI Tools**   | 🔧   | Advanced math engines, symbolic computation     |
-
-### Real Examples
-
-```
-User: 📷 [photo of triangle]
-AI: This is a 30-60-90 triangle. Side lengths: x, x√3, 2x
-```
-
-```
-User: 🎤 \"What's the derivative of e^x sin(x)\"
-AI: e^x (sin(x) + cos(x)) [with LaTeX rendering]
-```
-
-## 🎮 Quick Start
-
-```bash
-npm install
-npm run dev
-```
-
-Open [localhost:5174](http://localhost:5174)
+[... existing content unchanged until ## 🏗️ Architecture ...]
 
 ## 🏗️ Architecture
 
@@ -51,21 +10,44 @@ Open [localhost:5174](http://localhost:5174)
 - **Backend**: Specialized multimodal math AI agent (WebSocket + REST)
 - **Communication**: Real-time streaming + tool calling
 
+## ☁️ Cloud Run Deployment
+
+**Yes, frontend deployable to Google Cloud Run (free tier OK for demo)!**
+
+### Prerequisites
+
+```bash
+gcloud auth login
+gcloud config set project math-tutor-live
+gcloud components install docker  # if needed
+```
+
+### Build & Test
+
+```bash
+npm run build:prod     # Builds with prod backend URL
+npm run preview        # Test local server http://localhost:4173
+```
+
+Docker test:
+
+```bash
+npm run docker:test    # Builds/runs container :8080
+```
+
+### Deploy
+
+```bash
+npm run push           # Tag/push to GCR
+npm run deploy         # Deploy/update Cloud Run service
+```
+
+**Env Var**: `VITE_API_BASE_URL=https://mathtutor-agent-backend-1087118236338.us-central1.run.app`
+
+**Free Tier**: ~2M reqs/month free. Monitor billing.
+
 ## 📱 Screenshots
 
-| Hero - Main Interface                | Equation Solving                           | Multimodal Input                            | Advanced Features                         |
-| ------------------------------------ | ------------------------------------------ | ------------------------------------------- | ----------------------------------------- |
-| ![Hero](public/screenshots/demo.png) | ![Equations](public/screenshots/demo2.png) | ![Multimodal](public/screenshots/demo3.png) | ![Advanced](public/screenshots/demo4.png) |
+[unchanged]
 
-## 🔮 What's Next?
-
-- Handwriting recognition for scanned homework
-- Interactive graphing (Desmos integration)
-- Export solutions as PDF/LaTeX
-- Multi-session memory for full courses
-
-**Math problems? This agent has your back! 🎓**
-
----
-
-_Built with ❤️ for math learners everywhere_
+[... rest unchanged]
